@@ -2,53 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erwin's Portfolio</title>
-    <!-- Link sa external CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <header>
-        <h1>Erwin's Portfolio</h1>
-        <p>Welcome to my portfolio website!</p>
-    </header>
-
+    <!-- Navigation -->
     <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <h2 class="logo">Erwin Correa</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! Ako si Erwin, isang student at LeBron James fan. Gustong-gusto ko ang basketball at gusto kong ipakita ang aking mga projects at skills dito sa portfolio na ito.</p>
-</section>
-
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Ito ay isang sample project. Pwede mong ilagay dito ang description ng project mo at kung anong technologies ang ginamit mo.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="photo.jpg" alt="My Photo">
+            <p>
+                Hi, my name is Erwin Correa. Im the greatest programmer of all time, 
+                and Im also a yema specialist. I want to become an astronaut someday because 
+                I will find the secret ingredient in yema to make it super delicious and become a billionaire like Elon Musk.
+            </p>
         </div>
-
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Isa pang project example. Pwede rin maglagay ng link sa GitHub o live demo.</p>
-        </div>
-
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:erwin@example.com">erwincmanlapaz@gmail.com</a></p>
+    <!-- Projects Section -->
+    <section id="projects" class="section gray">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Simple HTML website</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>CSS styled page</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Portfolio website</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Erwin C. Manlapaz. All rights reserved.</p>
+        <p>© 2026 My Website</p>
     </footer>
 
 </body>
 </html>
+
