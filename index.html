@@ -1,70 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio Website</title>
-    <link rel="stylesheet" href=style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YEMATICS</title>
+
+<style>
+
+body{
+background-color:black;
+background-image:url('futuristic.png');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+scroll-behavior:smooth;
+text-shadow:0 0 15px rgba(139,0,0,0.7);
+}
+
+header{
+background:rgba(0,0,0,0.7);
+padding:30px;
+text-align:center;
+box-shadow:0 0 20px rgba(139,0,0,0.7);
+}
+
+h1{
+font-size:4em;
+color:#ff4d4d;
+text-shadow:0 0 15px #ff4d4d,0 0 30px #ff0000;
+animation:glowHeader 2s infinite alternate;
+margin:0;
+}
+
+@keyframes glowHeader{
+from{ text-shadow:0 0 10px #ff4d4d; }
+to{ text-shadow:0 0 30px #ff0000; }
+}
+
+nav{
+background:rgba(0,0,0,0.8);
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:#ff4d4d;
+text-decoration:none;
+margin:0 15px;
+font-size:1.2em;
+padding:10px 18px;
+border-radius:5px;
+transition:.3s;
+}
+
+nav a:hover{
+background:#8b0000;
+color:white;
+box-shadow:0 0 20px #ff4d4d;
+}
+
+.section{
+padding:40px;
+text-align:center;
+}
+
+.box{
+background:rgba(0,0,0,0.65);
+backdrop-filter:blur(8px);
+border:1px solid rgba(255,0,0,0.3);
+padding:25px;
+border-radius:18px;
+max-width:800px;
+margin:auto;
+margin-bottom:40px;
+box-shadow:0 0 20px rgba(255,0,0,0.2);
+transition:.3s;
+}
+
+.box:hover{
+transform:scale(1.03);
+}
+
+.section h2{
+font-size:2.5em;
+color:#ff4d4d;
+text-shadow:0 0 10px #ff9999;
+}
+
+.about-content img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 0 20px #ff0000,0 0 40px #ff0000;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
+100%{transform:translateY(0)}
+}
+
+.box a{
+display:block;
+background:#8b0000;
+color:white;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+text-decoration:none;
+transition:.3s;
+}
+
+.box a:hover{
+background:#ff4d4d;
+color:black;
+box-shadow:0 0 20px #ff0000;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.8);
+color:#ff9999;
+}
+
+#scrollTopBtn{
+display:none;
+position:fixed;
+bottom:30px;
+right:30px;
+background:#ff0000;
+border:none;
+color:white;
+padding:12px 15px;
+border-radius:50%;
+cursor:pointer;
+box-shadow:0 0 20px #03dbb7;
+}
+
+#scrollTopBtn:hover{
+background:#ff4d4d;
+}
+
+</style>
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2 class="logo">Erwin Correa</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">My Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+<h1>YEMATISM</h1>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h1>About Me</h1>
-        <div class="about-content">
-            <img src="photo.jpg" alt="My Photo">
-            <p>
-                Hi, my name is Erwin Correa. Im the greatest programmer of all time, 
-                and Im also a yema specialist. I want to become an astronaut someday because 
-                I will find the secret ingredient in yema to make it super delicious and become a billionaire like Elon Musk.
-            </p>
-        </div>
-    </section>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Me</a>
+<a href="#education">Education</a>
+<a href="#midterms">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section gray">
-        <h1>My Projects</h1>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Simple HTML website</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>CSS styled page</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Portfolio website</p>
-            </div>
-        </div>
-    </section>
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+</audio>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h1>Contact Me</h1>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<section class="section" id="home">
+<div class="box">
+<h2>Welcome to My YEMATICS 📂</h2>
+<p>This portfolio documents the step-by-step process and screenshots of the tasks completed in the subject YEMATICS.</p>
+</div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 My Website</p>
-    </footer>
+<section class="section" id="about">
+<div class="box">
+<h2>About Me 👨‍💻</h2>
+
+<div class="about-content">
+<img src="ERWIN.jpg" alt="Erwin Correa">
+
+<p>
+Hi, I am <b>Erwin Correa</b>, a student from CCA BSCS with a passion for exploring ideas and meeting new people.
+As an BSCS, I enjoy logical thinking, planning ahead, and focusing on possibilities.
+I aspire to thrive in the IT industry and make a meaningful impact in the field.
+</p>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="education">
+<div class="box">
+<h2>🎓 Education</h2>
+<p>College: Currently Studying at City College of Angeles</p>
+<p>High School: Graduated From Angeles City National High School</p>
+</div>
+</section>
+
+<section class="section" id="midterms">
+<div class="box">
+<h2>🧪 My Projects </h2>
+
+
+<section class="section" id="finals">
+<div class="box">
+
+<h2>🧠 My Projects </h2>
+
+<a href="Question what type of drinks is most popular during the summer (1).docx" target="_blank">
+Paired Task 1. Asking the Right Questions
+</a>
+
+<a href="TASK1.xlsx" target="_blank">
+    Practice Task 1 Demo File for Data Preparation and Cleaning
+</a>
+
+<a href="CLEANING.docx" target="_blank">
+    Practice Task 1 Demo File for Data Preparation and Cleaning screenshots
+</a> 
+
+
+
+<a href="task1 (4).xlsx" target="_blank">
+    Midterm Lab Task 1. Data Cleaning and Preparation
+</a>
+<a href="Doc2.docx" target="_blank">
+    Finals Lab Task 3: Table Manipulation
+</a>
+
+
+
+
+<a href="https://soguilon.github.io/Finals-Lab-Task-3.1/" target="_blank">
+Finals Lab Task 4: Using MySQL Clause
+</a>
+
+<a href="https://soguilon.github.io/Finals-Lab-Task-5/" target="_blank">
+Finals Lab Task 5: Views, Stored Procedures and Functions
+</a>
+
+<a href="https://soguilon.github.io/Finals-Lab-Task-6/" target="_blank">
+Finals Lab Task 6: MongoDB CRUD
+</a>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="box">
+
+<h2>📬 Contact Me</h2>
+
+<p>
+If you want to get in touch, feel free to reach out at  
+<a href="mailto: ecorrrea23-0094@cca.edu.ph"> ecorrrea23-0094@cca.edu.ph</a>
+</p>
+
+</div>
+</section>
+
+<footer>
+
+<p>© 2025 Erwin Correa. All rights reserved.</p>
+
+<a href="https://github.com/Soguilon/EDM-Tasks-Portfolio" target="_blank" style="color:#ff4d4d;">
+View Portfolio on Github
+</a>
+
+</footer>
+
+<button onclick="topFunction()" id="scrollTopBtn">⬆</button>
+
+<script>
+
+let mybutton=document.getElementById("scrollTopBtn");
+
+window.onscroll=function(){
+if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+mybutton.style.display="block";
+}else{
+mybutton.style.display="none";
+}
+};
+
+function topFunction(){
+document.body.scrollTop=0;
+document.documentElement.scrollTop=0;
+}
+
+</script>
 
 </body>
 </html>
-
